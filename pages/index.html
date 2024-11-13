@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SITE DE VIAGENS</title>
+
+    <!-- LINKS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- ICONES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- JAVA SCRIPT -->
+    <script src="../assets/script.js" defer></script>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../assets/style.css">
+
+</head>
+
+<body>
+
+   <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4">
+        <div class="container">
+            <!-- Botão para o modo dark ou light -->
+            <button class="btn btn-secondary me-4" id="alterarTemaSite" onclick="alterarTemaSite()">
+                <i class="bi bi-brightness-high-fill" id="temaIcone"></i>
+            </button>
+    
+            <!-- Logo -->
+            <a class="navbar-brand text-success" href="#"><strong>NOSSO SITE DE VIAGEM <i class="bi bi-airplane-engines"></i></strong></a>
+        
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Roteiros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Nacionais</a></li>
+                            <li><a class="dropdown-item" href="#">Internacionais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nós</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+<!-- Seu conteúdo principal aqui -->
+  <!-- Modal CONTATO-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Contato</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Nome</label>
+            <input type="name" class="form-control" id="exampleFormControlInput2" placeholder="Jessica Ferraz">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="inputPhone" class="form-label">Telefone</label>
+            <input type="number" class="form-control" id="inputPhone" placeholder="(__)________">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              placeholder="Escreva sua mensagem."></textarea>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <header class="container my-4">
+    <div class="row">
+      <!-- vai ocupar todo o espaço se a tela for pequena -->
+      <!-- col-lg-6 para telas grandes -->
+      <div class="col-12 col-lg-6">
+        <h1 class="text-center pt-5 mt-4">Viajar é Preciso: Descubra o Mundo, Viva Aventuras!</h1>
+        <p class="lead text-muted text-center text-md mt-4">Planeje sua viagem conoso</p>
+        <div class="text-center text-md-center">
+          <button type="button" class="btn btn-outline-success mt-2 ms-4" style="font-size: 2rem;">Faça seu orçamento
+          </button>
+
+        </div>
+
+
+      </div>
+
+      <div class="col-12 col-lg-6 my-4 img-thumbnail">
+        <!-- <img src="img/passport.jpg" alt="Passaporte no mapa mundi p-5" class="img-fluid img-thumbnail"> -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            
+<!--   Carousel Amazônia           -->
+            <div class="carousel-item active">
+              <img src="https://i.postimg.cc/hPPNHdDJ/amazon.jpg" class="d-block w-100" alt="vitória régiaa">
+            </div>
+<!--    Fim    Amazônia      -->
+            
+            
+<!--             Carousel Aurora Boreal -->
+            <div class="carousel-item">
+              <img src="https://i.postimg.cc/yY4yRq57/aurora.jpg" class="d-block w-100" alt="aurora boreal">
+            </div>
+<!--       Fim Aurora        -->
+            
+            
+<!-- Carousel Egito             -->
+            <div class="carousel-item">
+              <img src="https://i.postimg.cc/QxfV31cv/egypt.jpg" class="d-block w-100" alt="Egito">
+            </div>
+<!--    Fim   Egito       -->
+            
+            
+<!--      Carousel Maldivas        -->
+            <div class="carousel-item">
+              <img src="https://i.postimg.cc/qvnfLdBQ/maldives.jpg" class="d-block w-100" alt="Ilhas Maldivas">
+            </div>
+<!--        Fim Maldivas      -->
+            
+            
+<!-- Carousel RJ             -->
+            <div class="carousel-item">
+              <img src="https://i.postimg.cc/hGbHkbdd/rj.jpg" class="d-block w-100" alt="Rio de Janeiro">
+            </div>
+<!--    Fim RJ          -->
+            
+            
+            
+<!--  Carousel TAJ MAHAL            -->
+            <div class="carousel-item">
+              <img src="https://i.postimg.cc/L5hwgc0t/taj-mahal.jpg" class="d-block w-100" alt="Taj Mahal">
+            </div>
+<!-- Fim do Carousel Taj Mahal             -->
+            
+            
+<!--      Carousel TIMES SQUARE        -->
+            <div class="carousel-item">
+              <img src="https://i.postimg.cc/sDQbjRWy/times-square.jpg" class="d-block w-100" alt="Times Square">
+            </div>
+<!--             Fim do carousel ny -->
+            
+<!--  Carousel ITÁLIA            -->
+            <div class="carousel-item">
+              <img src="https://i.postimg.cc/sXg0tFzk/village.jpg" class="d-block w-100" alt="Vila na Itália">
+            </div>
+<!--             Fim carousel Italia -->
+            
+          </div>
+<!--        Fim de carousel-inner    -->
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+
+  <!-- Section CARDS -->
+  <section class="py-8 py-md-11 ">
+    <div class="container">
+      <div class="row">
+        
+<!--   Mundo Inteiro       -->
+        <div class="col-12 col-md-4">
+          <div class="card  mb-6 mb-md-0" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center text-success" style="font-size: x-large;"><i class="bi bi-globe"></i>
+              </h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Mundo inteiro</h6>
+              <p class="card-text">Planejamos sua viagem para qualquer lugar do mundo.
+                <br>
+                <br>
+                <br>
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+<!-- Experiência Personalizada -->
+        <div class="col-12 col-md-4">
+          <div class="card mb-6 mb-md-0" style="width: 18rem; ">
+            <div class="card-body ">
+              <h5 class="card-title text-center text-success" style="font-size: x-large;"><i class="bi bi-suitcase"></i>
+              </h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Experiências Personalizadas </h6>
+              <p class="card-text">Nossas viagens são sob medida, você escolhe o itinerário, acomodações, atividades
+                entre outros.</p>
+
+            </div>
+          </div>
+        </div>
+
+<!-- Atendimento 24h  -->
+        <div class="col-12 col-md-4 ">
+          <div class="card  mb-6 mb-md-0" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center text-success" style="font-size: x-large;"><i
+                  class="bi bi-telephone"></i>
+              </h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Atendimento 24h </h6>
+              <p class="card-text">Nossas viagens são sob medida, você escolhe o itinerário, acomodações, atividades
+                entre
+                outros.</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- REDES SOCIAIS -->
+  <section class=" mt-5 mt-5 pt-8 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="offset-lg-2 col-lg-8 col-md-12 col-12">
+          <div class="text-center px-lg-18 mb-8">
+            <p class="text-sucess"><strong><i class="bi bi-airplane"></i></strong> Viajar é Preciso <i
+                class="bi bi-globe"></i></strong></p>
+            <p class="mb-0">
+              Viajar é preciso sempre! Deixe que a gente cuide desses momentos únicos para você.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+    <!-- Div para carregar o footer -->
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright © 2024 Todos os Direitos Reservados por
+           <a href="#">LINK</a>.
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="bi bi-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

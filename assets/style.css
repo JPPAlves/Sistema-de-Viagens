@@ -1,0 +1,85 @@
+.site-footer {
+    background-color: #2b3035;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+  }
+  .row p{
+   color: rgb(25 135 84);
+  }
+
+
+  .site-footer a {
+    color: #ffffff;
+  }
+  
+  .site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  
+  .social-icons {
+    text-align: right;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  
+  .social-icons a {
+    
+    color: #ffffff;
+    font-size: 20px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    margin-right: 10    px;
+    border-radius: 100%;
+    transition: all 0.2s linear;
+  }
+  
+  .social-icons a:hover {
+    color: #ffffff;
+  }
+  
+  .social-icons a.facebook:hover {
+    color: #ea5de1;
+  }
+  
+  .social-icons a.twitter:hover {
+    color: #04bcff;
+  }
+  
+  .social-icons a.linkedin:hover {
+    color: #27ff4b;
+  }
+  
+  .social-icons a.dribbble:hover {
+   color: #7b4cea;
+  }
+  
+  .copyright-text {
+    margin: 0;
+  }
+  
+  @media (max-width: 767px) {
+    .site-footer {
+      padding-bottom: 0;
+    }
+  
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+      text-align: center;
+    }
+  
+    .social-icons li {
+      display: block;
+    }
+  }
+  
