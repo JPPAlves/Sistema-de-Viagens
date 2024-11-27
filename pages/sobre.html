@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBRE NÓS</title>
+
+    <!-- LINKS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- ICONES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- JAVA SCRIPT -->
+    <script src="../assets/script.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4">
+        <div class="container">
+            <!-- Botão para o modo dark ou light -->
+            <button class="btn btn-secondary me-4" id="alterarTemaSite" onclick="alterarTemaSite()">
+                <i class="bi bi-brightness-high-fill" id="temaIcone"></i>
+            </button>
+    
+            <!-- Logo -->
+            <a class="navbar-brand text-success" href="#"><strong>NOSSO SITE DE VIAGEM <i
+                        class="bi bi-airplane-engines"></i></strong></a>
+    
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Roteiros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Nacionais</a></li>
+                            <li><a class="dropdown-item" href="#">Internacionais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nós</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Fale
+                        Conosco</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SOBRE NÓS -->
+    <section class="mt-5">
+        <div class="container">
+            <h1 class="text-center text-success mb-4">Sobre Nós</h1>
+            <p class="text-center">
+                Bem-vindo à nossa agência de viagens! Somos apaixonados por explorar o mundo e ajudar nossos clientes
+                a transformar seus sonhos em experiências inesquecíveis.
+            </p>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <h3 class="text-success">Nossa Missão</h3>
+                    <p>
+                        Proporcionar experiências de viagens únicas e memoráveis, com foco na qualidade, segurança e
+                        conforto. Estamos aqui para simplificar sua jornada e garantir que cada detalhe seja cuidado
+                        com atenção.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-success">Por Que Nos Escolher?</h3>
+                    <p>
+                        Oferecemos pacotes personalizados, suporte completo e parcerias exclusivas com as melhores
+                        companhias do setor. Nossa equipe experiente está comprometida em atender todas as suas
+                        necessidades e tornar sua viagem impecável.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-success">Nossos Valores</h3>
+                    <p>
+                        • **Excelência:** Entregar o melhor em cada etapa da jornada.<br>
+                        • **Confiança:** Construir relações duradouras com nossos clientes.<br>
+                        • **Sustentabilidade:** Promover o turismo responsável e consciente.<br>
+                        • **Inovação:** Buscar sempre novas formas de superar expectativas.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3 class="text-center text-success">Nosso Compromisso</h3>
+                    <p class="text-center">
+                        Acreditamos que cada viagem é uma oportunidade de criar memórias para a vida toda. Por isso,
+                        trabalhamos incansavelmente para oferecer destinos incríveis e uma experiência excepcional do
+                        início ao fim.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- REDES SOCIAIS -->
+    <section class=" mt-5 mt-5 pt-8 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8 col-md-12 col-12">
+                    <div class="text-center px-lg-18 mb-8">
+                        <p class="text-sucess"><strong><i class="bi bi-airplane"></i></strong> Viajar é Preciso <i
+                                class="bi bi-globe"></i></strong></p>
+                        <p class="mb-0">
+                            Viajar é preciso sempre! Deixe que a gente cuide desses momentos únicos para você.
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    
+    <!-- Div para carregar o footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright © 2024 Todos os Direitos Reservados por
+                        <a href="#">LINK</a>.
+                    </p>
+                </div>
+    
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="bi bi-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+</html>
